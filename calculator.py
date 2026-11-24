@@ -21,6 +21,12 @@ def required_rate(runs_needed, overs_remaining):
 
     return round(runs_needed / overs_remaining, 2)
 
+def score_summary(runs, overs):
+    print("\n===== SCORE SUMMARY =====")
+    print("Total Runs:", runs)
+    print("Overs Played:", overs)
+    print("Run Rate:", run_rate(runs, overs))
+
 
 def main():
     print("===== CRICKET SCORE CALCULATOR =====")
